@@ -1,0 +1,27 @@
+import Vue from 'vue'
+import Router from 'vue-router'
+import Home from '@/components/Home'
+import Profile from '@/components/Profile'
+import Inventory from '@/components/Inventory'
+
+Vue.use(Router)
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Home',
+      component: Home
+    },
+    {
+      path: '/profile',
+      name: 'Profile',
+      component: Profile
+    },
+    {
+      path: '/inventory',
+      name: 'Inventory',
+      component: Inventory
+    }
+  ]
+})
