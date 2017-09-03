@@ -44,7 +44,12 @@ var webpackConfig = merge(baseWebpackConfig, {
     new OptimizeCSSPlugin({
       cssProcessorOptions: {
         safe: true
-      }
+      },
+
+    }),
+    new webpack.optimize.ModuleConcatenationPlugin(),
+    new webpack.optimize.UglifyJsPlugin({
+      
     }),
     // generate dist index.html with correct asset hash for caching.
     // you can customize output by editing /index.html
