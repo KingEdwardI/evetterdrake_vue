@@ -33,7 +33,7 @@
           <div class="itemLi">
             <div class="item" v-for="(item, i) in listItems" v-on:click="selectItem(i)">
               <img :src="item.image" height="45px" width="45px"/>
-              <span> {{ item.title }} </span> <br/>
+              <span class="liTitle"> {{ item.title }} </span> <br/>
             </div>
           </div>
         </div>
@@ -145,7 +145,7 @@ export default {
   font-size: 40px;
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 50px;
   width: 65%;
 }
 
@@ -178,7 +178,7 @@ export default {
 .itemLi {
   position: absolute;
   top: 20px;
-  left: 35px;
+  left: 50px;
 }
 
 .item {
@@ -187,6 +187,10 @@ export default {
   display: inline-flex;
   height: 50px;
   width: 275px;
+}
+
+.liTitle {
+  padding-left: 5px;
 }
 </style>
 
