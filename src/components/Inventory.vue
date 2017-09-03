@@ -23,9 +23,8 @@
         <div class="itemUse menu">
           <img src="../assets/pokemon_border2.png" alt='border' class="wrapper"/>
           <div class="use" v-if="activeItem">
-            <div v-on:click="goToItem">View</div>
+            <div v-if="activeItem.github" v-on:click="goToItem">View</div>
             <div v-if="activeItem.demo" v-on:click="goToDemo">Demo</div>
-            <div>Three</div>
           </div>
         </div>
         <div class="itemList menu">
@@ -69,13 +68,15 @@ export default {
         {
           title: 'Student Portal',
           desc: 'A student portal implementation for use at CodeCraft School Of Technology.',
-          github: 'https://students.codecraftschool.com',
+          github: '',
+          demo: 'https://students.codecraftschool.com',
           image: 'https://pixel.wp.com/g.gif?v=ext&j=1%3A5.2.1&blog=103198269&post=35&tz=-6&srv=www.codecraftschool.com&host=www.codecraftschool.com&ref=&rand=0.3172180836536478'
         },
         {
           title: 'WiggleWhere',
           desc: 'A social networking application for music lovers and festival-goers',
-          github: 'http://wigglewhere.com',
+          github: '',
+          demo: 'http://wigglewhere.com',
           image: 'https://scontent-dft4-3.xx.fbcdn.net/v/t1.0-9/17884058_314840202252739_6680548501225783387_n.jpg?oh=30d1fca752b0c73764bd69c83d9c0dc4&oe=5A579B2E'
         }
       ],

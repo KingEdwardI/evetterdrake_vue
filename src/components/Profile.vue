@@ -31,6 +31,30 @@
         <div class="charData">
           <h2 class="font"> Web Developer </h2>
           <h3 class="font"> edward.vetterdrake@gmail.com </h3>
+          <a class="font" href="../assets/pdf/EdwardVetter-DrakeWebDeveloper.pdf">
+            <img src="../assets/pdf.gif" height="50px" width="50px" />
+            <p>Resume</p>
+          </a>
+          <br>
+          <a class="font" href="https://evetterdrake.wordpress.com">
+            <img src="../assets/wp.png" height="50px" width="50px" />
+            <p>Blog</p>
+          </a>
+          <br>
+          <a class="font" href="https://github.com/KingEdwardI">
+            <img src="../assets/octocat.png" height="50px" width="50px" />
+            <p>Github</p>
+          </a>
+          <br>
+          <a class="font" href="https://linkedin.com/in/edward-vetter-drake">
+            <img src="../assets/linkden8bit.png" height="50px" width="50px" />
+            <p>LinkedIn</p>
+          </a>
+          <br>
+          <a class="font" href="https://twitter.com/edvetterdrake">
+            <img src="../assets/twitter.png" height="50px" width="50px" />
+            <p>Twitter</p>
+          </a>
         </div>
       </div>
     </div>
@@ -153,6 +177,14 @@ export default {
   width: 300px;
   display: flex;
   display: table-cell;
+}
+
+.charData > a {
+  display: inline-flex;
+}
+.charData img {
+  display: inline-flex;
+  margin-right: 10px;
 }
 
 </style>

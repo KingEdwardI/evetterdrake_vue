@@ -16,7 +16,7 @@
         </div>
         <router-link to="/">
           <div id="nav1" class="nav-item">
-            <p class="nav-text"> Home </p>
+            <p class="nav-text"> Menu </p>
           </div>
         </router-link>
         <router-link to="/profile">
