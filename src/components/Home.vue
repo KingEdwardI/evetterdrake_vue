@@ -12,14 +12,14 @@
             >
               <img 
                 src="../assets/pointer.png" 
-                class="pointer" height="75%" 
-                width="75%" alt="pointer" 
+                class="pointer"
+                height="75%" 
+                width="75%"
+                alt="pointer" 
                 v-if="isContinueHovered"
               />
               <img 
                 src="../assets/continue.png" 
-                height="200%" 
-                width="200%" 
                 alt="continue"
               />
             </div>
@@ -41,8 +41,6 @@
               />
               <img 
                 src="../assets/newgame.png" 
-                height="200%" 
-                width="200%" 
                 alt="newgame"
               />
             </div>
@@ -98,5 +96,10 @@ export default {
 #newgame {
   position: absolute;
   margin: 40% auto;
+}
+
+.menu-item img {
+  height: 200%;
+  width: 200%;
 }
 </style>
