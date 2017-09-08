@@ -101,7 +101,7 @@ export default {
   margin: 40% auto;
 }
 
-.menu-item #menu-button {
+#menu-button {
   height: 200%;
   width: 200%;
 }
