@@ -7,8 +7,8 @@
             <div 
               class="menu-item" 
               id="continue" 
-              v-on:mouseover="continueHovered"
-              v-on:mouseout="continueHovered"
+              v-on:mouseover="continueHovered()"
+              v-on:mouseout="continueHovered()"
             >
               <img 
                 src="../assets/pointer.png" 
@@ -29,8 +29,8 @@
             <div 
               class="menu-item" 
               id="newgame" 
-              v-on:mouseover="newGameHovered"
-              v-on:mouseout="newGameHovered"
+              v-on:mouseover="newGameHovered()"
+              v-on:mouseout="newGameHovered()"
             >
               <img 
                 src="../assets/pointer.png" 
