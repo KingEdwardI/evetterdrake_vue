@@ -13,8 +13,8 @@
               <img 
                 src="../assets/pointer.png" 
                 class="pointer"
-                height="75%" 
-                width="75%"
+                height="75px" 
+                width="75px"
                 alt="pointer" 
                 v-if="isContinueHovered"
               />
@@ -35,8 +35,8 @@
               <img 
                 src="../assets/pointer.png" 
                 class="pointer" 
-                height="75%" 
-                width="75%" 
+                height="75px" 
+                width="75px" 
                 alt="pointer" 
                 v-if="isNewGameHovered"
               />
