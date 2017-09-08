@@ -92,13 +92,11 @@ export default {
 
 #continue {
   position: absolute;
-  top: 25%;
-  left: 35%;
+  margin: 20% auto;
 }
 
 #newgame {
   position: absolute;
-  top: 50%;
-  left: 35%;
+  margin: 40% auto;
 }
 </style>
