@@ -19,6 +19,7 @@
                 v-if="isContinueHovered"
               />
               <img 
+                class="menu-button"
                 src="../assets/continue.png" 
                 alt="continue"
               />
@@ -40,6 +41,7 @@
                 v-if="isNewGameHovered"
               />
               <img 
+                class="menu-button"
                 src="../assets/newgame.png" 
                 alt="newgame"
               />
@@ -99,7 +101,7 @@ export default {
   margin: 40% auto;
 }
 
-.menu-item img {
+.menu-item #menu-button {
   height: 200%;
   width: 200%;
 }
