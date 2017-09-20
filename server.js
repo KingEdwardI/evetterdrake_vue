@@ -5,4 +5,4 @@ app.use('/', express.static(__dirname + '/build'))
 
 app.use(express.static(__dirname +'/static'));
 
-app.listen(8000);
+app.listen(80);
