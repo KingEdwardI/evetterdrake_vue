@@ -6,7 +6,7 @@
           <img id="bitdown" v-on:click="clickImage" src="./assets/8bitdown.png" height="32px" width="22px" alt="logo">
           <div id="dropdownWrap">
             <div v-if="isMenuShowing" class="dropdown-content">
-              <a href="http://evetterdrake.me/resume.pdf"><p>Resume</p></a>
+              <a href="/resume.pdf"><p>Resume</p></a>
               <a href="https://github.com/KingEdwardI"><p>Github</p></a>
               <a href="https://linkedin.com/in/edward-vetter-drake"><p>LinkedIn</p></a>
               <a href="https://twitter.com/edvetterdrake"><p>Twitter</p></a>
