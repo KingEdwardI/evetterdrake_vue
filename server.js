@@ -1,8 +1,8 @@
-const express = require('express');
-const app = express();
+const express = require('express')
+const app = express()
 
-app.use('/', express.static(__dirname + '/build'))
+app.use('/', express.static(__dirname + '/dist'))
 
-app.use(express.static(__dirname +'/static'));
+app.use(express.static(__dirname +'/static'))
 
-app.listen(80);
+app.listen(80)
