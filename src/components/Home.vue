@@ -89,8 +89,6 @@ export default {
 }
 
 .pointer {
-  position: absolute;
-  left: -100px;
 }
 
 #continue {
@@ -101,8 +99,8 @@ export default {
   margin: 40% auto;
 }
 
-#menu-button {
-  height: 200%;
-  width: 200%;
+.menu-button {
+  height: 100px;
+  width: 225px;
 }
 </style>
