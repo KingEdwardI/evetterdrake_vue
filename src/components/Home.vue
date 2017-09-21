@@ -7,8 +7,8 @@
             <div 
               class="menu-item" 
               id="continue" 
-              v-on:mouseover="continueHovered()"
-              v-on:mouseout="continueHovered()"
+              v-on:mouseover="isContinueHovered = true"
+              v-on:mouseout="isContinueHovered = false"
             >
               <img 
                 src="../assets/pointer.png" 
@@ -27,10 +27,10 @@
           </router-link>
           <router-link to="/profile">
             <div 
-              class="menu-item" 
+              class="menu-item row" 
               id="newgame" 
-              v-on:mouseover="newGameHovered()"
-              v-on:mouseout="newGameHovered()"
+              v-on:mouseover="isNewGameHovered = true"
+              v-on:mouseout="isNewGameHovered = false"
             >
               <img 
                 src="../assets/pointer.png" 
@@ -61,14 +61,6 @@ export default {
       isContinueHovered: false,
       isNewGameHovered: false
     }
-  },
-  methods: {
-    continueHovered: function() {
-      this.isContinueHovered = !this.isContinueHovered
-    },
-    newGameHovered: function() {
-      this.isNewGameHovered = !this.isNewGameHovered
-    }
   }
 }
 </script>
@@ -88,9 +80,6 @@ export default {
   display: flex;
 }
 
-.pointer {
-}
-
 #continue {
   margin: 20% auto;
 }
@@ -103,4 +92,5 @@ export default {
   height: 100px;
   width: 225px;
 }
+
 </style>
