@@ -91,6 +91,10 @@ export default {
   width: 75px;
 }
 
+#btn_space {
+  height: 5vh;
+}
+
 .menu-item {
   max-width: 100%;
   display: inline-flex;
