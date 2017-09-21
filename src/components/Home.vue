@@ -1,54 +1,53 @@
 <template>
   <div class="home">
     <div class="main">
-      <div class="wrapper">
-        <div class="menu">
-          <router-link to="/inventory">
-            <div 
-              class="menu-item" 
-              id="continue" 
-              v-on:mouseover="isContinueHovered = true"
-              v-on:mouseout="isContinueHovered = false"
-            >
-              <img 
-                src="../assets/pointer.png" 
-                class="pointer"
-                height="75px" 
-                width="75px"
-                alt="pointer" 
-                v-if="isContinueHovered"
-              />
-              <img 
-                class="menu-button"
-                src="../assets/continue.png" 
-                alt="continue"
-              />
-            </div>
-          </router-link>
-          <router-link to="/profile">
-            <div 
-              class="menu-item row" 
-              id="newgame" 
-              v-on:mouseover="isNewGameHovered = true"
-              v-on:mouseout="isNewGameHovered = false"
-            >
-              <img 
-                src="../assets/pointer.png" 
-                class="pointer" 
-                height="75px" 
-                width="75px" 
-                alt="pointer" 
-                v-if="isNewGameHovered"
-              />
-              <img 
-                class="menu-button"
-                src="../assets/newgame.png" 
-                alt="newgame"
-              />
-            </div>
-          </router-link>
+      <router-link to="/inventory">
+        <div 
+          class="menu-item" 
+          v-on:mouseover="isContinueHovered = true"
+          v-on:mouseout="isContinueHovered = false"
+        >
+          <div class="pointer">
+            <img 
+              src="../assets/pointer.png" 
+              class="pointer" 
+              height="75px" 
+              width="75px" 
+              alt="pointer" 
+              v-if="isContinueHovered"
+            />
+          </div>
+          <img 
+            class="menu-button"
+            src="../assets/continue.png" 
+            alt="continue"
+          />
         </div>
-      </div>
+      </router-link>
+      <div id="btn_space"></div>
+      <router-link to="/profile">
+        <div 
+          class="menu-item" 
+          v-on:mouseover="isNewGameHovered = true"
+          v-on:mouseout="isNewGameHovered = false"
+        >
+          <div class="pointer">
+            <img 
+              src="../assets/pointer.png" 
+              class="pointer" 
+              height="75px" 
+              width="75px" 
+              alt="pointer" 
+              v-if="isNewGameHovered"
+            />
+          </div>
+          <img 
+            class="menu-button"
+            src="../assets/newgame.png" 
+            alt="newgame"
+          />
+        </div>
+      </router-link>
     </div>
   </div>
 </template>
@@ -68,7 +67,14 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .main {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  padding-right: 75px;
 }
 .home {
   background-color: black;
@@ -80,17 +86,18 @@ export default {
   display: flex;
 }
 
-#continue {
-  margin: 20% auto;
+.pointer {
+  height: 75px;
+  width: 75px;
 }
 
-#newgame {
-  margin: 40% auto;
+.menu-item {
+  max-width: 100%;
+  display: inline-flex;
 }
 
 .menu-button {
   height: 100px;
   width: 225px;
 }
-
 </style>
