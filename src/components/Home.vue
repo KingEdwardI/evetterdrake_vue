@@ -66,6 +66,16 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.home {
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url(../assets/ChronoTriggerOverworldMiddleAgesBG.png);
+  height: 100vh;
+  margin-top:0;
+  padding-top:0;
+  display: flex;
+}
 .main {
   display: flex;
   flex-direction: column;
@@ -75,15 +85,6 @@ export default {
   height: 100vh;
   width: 100vw;
   padding-right: 75px;
-}
-.home {
-  background-color: black;
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  margin-top:0;
-  padding-top:0;
-  display: flex;
 }
 
 .pointer {

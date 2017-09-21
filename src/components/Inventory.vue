@@ -70,7 +70,7 @@ export default {
           desc: 'A student portal implementation for use at CodeCraft School Of Technology.',
           github: '',
           demo: 'https://students.codecraftschool.com',
-          image: 'https://pixel.wp.com/g.gif?v=ext&j=1%3A5.2.1&blog=103198269&post=35&tz=-6&srv=www.codecraftschool.com&host=www.codecraftschool.com&ref=&rand=0.3172180836536478'
+          image: '/img/cc.png'
         },
         {
           title: 'WiggleWhere',
@@ -99,9 +99,8 @@ export default {
 
 <style scoped>
 #inventory {
-  background-image: url(http://www.finalfantasykingdom.net/chrono/ccworldmap.png);
+  background-image: url(../assets/rpg2.png);
   background-size: cover;
-  height: 100vh;
 }
 .itemWrap {
   margin-left: 5%;

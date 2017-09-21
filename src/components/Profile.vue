@@ -78,10 +78,10 @@ export default {
 <style scoped>
 
 #profile {
-  background-image: url(../assets/ChronoTriggerOverworldMiddleAgesBG.png);
   background-size: cover;
   height: 100vh;
   padding-top: 50px;
+  background-image: url(../assets/rpg1.jpg);
 }
 
 .font {
